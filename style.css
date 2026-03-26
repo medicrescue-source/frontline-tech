@@ -65,7 +65,7 @@ background-attachment:fixed;
 height:520px;
 background:
 linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url("./banner.jpg");
+url(".banner.jpg");
 background-size:cover;
 background-position:center;
 }
