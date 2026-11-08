@@ -228,3 +228,50 @@ grid-column:span 1;
 }
 
 }
+
+/* MOBILE LAYOUT (added) */
+
+@media(max-width:700px){
+
+nav{
+padding:14px 0;
+}
+
+nav ul{
+float:none;
+margin-top:10px;
+}
+
+nav li{
+margin-left:0;
+margin-right:18px;
+}
+
+.hero{
+height:auto;
+min-height:520px;
+padding:130px 0 70px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.section{
+padding:80px 0;
+}
+
+.services{
+gap:24px;
+margin-top:40px;
+}
+
+.card{
+padding:28px;
+}
+
+.contact-card{
+padding:30px 20px;
+}
+
+}

@@ -1,14 +1,17 @@
 // Card scroll animations
 const cards = document.querySelectorAll(".card");
 
-window.addEventListener("scroll", () => {
+const revealCards = () => {
   cards.forEach(card => {
     const top = card.getBoundingClientRect().top;
     if (top < window.innerHeight - 100) {
       card.classList.add("show");
     }
   });
-});
+};
+
+window.addEventListener("scroll", revealCards);
+revealCards(); // also run once on load
 
 // Counter animation — fires when metrics section scrolls into view
 const counters = document.querySelectorAll(".count");
