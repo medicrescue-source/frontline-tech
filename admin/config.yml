@@ -1,0 +1,50 @@
+# Decap CMS settings for frontlinetechllc.com
+# The only value you must change after deploying the login helper is base_url below.
+
+backend:
+  name: github
+  repo: medicrescue-source/frontline-tech
+  branch: main
+  # Address of your free GitHub login helper (a Cloudflare Worker). Replace after you deploy it.
+  base_url: https://REPLACE-WITH-YOUR-WORKER-ADDRESS.workers.dev
+
+site_url: https://frontlinetechllc.com
+display_url: https://frontlinetechllc.com
+
+# Required by Decap even though this site does not upload images through the CMS
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Promotions"
+    files:
+      - name: "promotions"
+        label: "Banner and Current Offers"
+        file: "promotions.json"
+        fields:
+          - label: "Top Banner"
+            name: "banner"
+            widget: "object"
+            hint: "A thin bar shown at the top of every page. Visitors can close it."
+            fields:
+              - { label: "Show this banner", name: "enabled", widget: "boolean", default: false, hint: "Turn on to display it (within the dates below)." }
+              - { label: "Banner message", name: "text", widget: "string", hint: "One short sentence, e.g. 20% off any new website this month." }
+              - { label: "Link address", name: "link", widget: "string", required: false, default: "contact.html", hint: "Use contact.html or services.html, or a full web address starting with https://" }
+              - { label: "Link text", name: "linkText", widget: "string", required: false, default: "Get a Free Website Review" }
+              - { label: "Start date", name: "start", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false, hint: "Leave blank to start immediately." }
+              - { label: "End date", name: "end", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false, hint: "Leave blank for no end. The banner turns off by itself after this day." }
+          - label: "Current Offers"
+            name: "promotions"
+            widget: "list"
+            label_singular: "Offer"
+            summary: "{{fields.title}}"
+            hint: "Cards shown in the Current Offers section on the home and services pages."
+            fields:
+              - { label: "Show this offer", name: "enabled", widget: "boolean", default: false }
+              - { label: "Offer title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text", required: false, hint: "Include any conditions." }
+              - { label: "Button address", name: "link", widget: "string", required: false, default: "contact.html" }
+              - { label: "Button text", name: "linkText", widget: "string", required: false, default: "Claim This Offer" }
+              - { label: "Start date", name: "start", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false }
+              - { label: "End date", name: "end", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false }
