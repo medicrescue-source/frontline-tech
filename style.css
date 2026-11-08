@@ -275,3 +275,46 @@ padding:30px 20px;
 }
 
 }
+
+/* PROMOTIONS BANNER (added) */
+
+.promo-bar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+background:linear-gradient(90deg,#2563eb,#06b6d4);
+color:white;
+text-align:center;
+padding:10px 44px 10px 16px;
+font-size:15px;
+font-weight:600;
+}
+
+.promo-bar a{
+color:white;
+text-decoration:underline;
+margin-left:10px;
+}
+
+.promo-bar button{
+position:absolute;
+right:12px;
+top:50%;
+transform:translateY(-50%);
+background:none;
+border:0;
+color:white;
+font-size:22px;
+line-height:1;
+cursor:pointer;
+}
+
+nav{
+top:var(--promo-h,0px);
+}
+
+body{
+padding-top:var(--promo-h,0px);
+}
