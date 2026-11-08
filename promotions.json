@@ -1,7 +1,7 @@
 {
   "_help": "HOW TO UPDATE: Edit the text between the quotes, keep the quotes and commas, and set enabled to true to show an offer. Dates use YYYY-MM-DD. An offer shows only while enabled is true and today falls between start and end (both optional; leave end as an empty string for no expiry). Leave everything disabled to hide the banner and the Current Offers section completely.",
   "banner": {
-    "enabled": false,
+    "enabled": true,
     "text": "Example offer: replace this text with your promotion",
     "link": "contact.html",
     "linkText": "Get a Free Website Review",
@@ -10,7 +10,7 @@
   },
   "promotions": [
     {
-      "enabled": false,
+      "enabled": true,
       "title": "Example: Replace With Your Offer Name",
       "description": "Describe the offer here, including any conditions.",
       "link": "contact.html",
