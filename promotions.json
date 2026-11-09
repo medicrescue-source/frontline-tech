@@ -11,7 +11,7 @@
   "promotions": [
     {
       "enabled": true,
-      "title": "Example: Replace With Your Offer Name",
+      "title": "Testing Offer ",
       "description": "Describe the offer here, including any conditions.",
       "link": "contact.html",
       "linkText": "Claim This Offer",
