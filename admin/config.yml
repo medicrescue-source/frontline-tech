@@ -6,7 +6,7 @@ backend:
   repo: medicrescue-source/frontline-tech
   branch: main
   # Address of your free GitHub login helper (a Cloudflare Worker). Replace after you deploy it.
-  base_url: https://REPLACE-WITH-YOUR-WORKER-ADDRESS.workers.dev
+  base_url:  https://decap-proxy.rv369.workers.dev
 
 site_url: https://frontlinetechllc.com
 display_url: https://frontlinetechllc.com
