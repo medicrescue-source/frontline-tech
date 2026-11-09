@@ -10,7 +10,7 @@
   },
   "promotions": [
     {
-      "enabled": true,
+      "enabled": false,
       "title": "Testing Offer ",
       "description": "Describe the offer here, including any conditions.",
       "link": "contact.html",
