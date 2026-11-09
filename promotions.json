@@ -4,7 +4,7 @@
     "enabled": true,
     "text": "Example offer: replace this text with your promotion",
     "link": "contact.html",
-    "linkText": "Get a Free Website Review",
+    "linkText": "Testing Offer",
     "start": "2026-11-15",
     "end": "2026-12-15"
   },
